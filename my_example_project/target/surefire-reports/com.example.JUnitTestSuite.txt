@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.example.JUnitTestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 37.528 sec <<< FAILURE! - in com.example.JUnitTestSuite
+testGoogle(com.example.SampleJUnitTest)  Time elapsed: 37.52 sec  <<< ERROR!
+java.lang.IllegalMonitorStateException: null
+	at java.lang.Object.wait(Native Method)
+	at com.example.SampleJUnitTest.testGoogle(SampleJUnitTest.java:57)
+
+testGoogle(com.example.SampleJUnitTest)  Time elapsed: 37.528 sec  <<< ERROR!
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'темп-ПК', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.<init>(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:172)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:248)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:124)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:474)
+	at com.example.SampleJUnitTest.tearDown(SampleJUnitTest.java:74)
+
